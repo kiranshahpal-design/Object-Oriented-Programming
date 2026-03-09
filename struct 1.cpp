@@ -17,24 +17,11 @@ struct Student
 };
 int main()
 {
-	Student s[5];
-	for(int i=0;i<5;i++)
-	{
-		cout<<"Enter data for student"<<i+1<<endl;
-		cout<<"First name:";
-		cin>>s[i].first_name;
-		cout<< "lastname:";
-		cin>>s[i].last_name;
-		cout<<"roll_number:";
-		cin>>s[i].roll_number;
-		cout<<"marks:";
-		cin>>s[i].marks;
-		cout<<endl;
-	}
-	cout<<"\n Student Information\n";
-	for(int i=0;i<5;i++)
-	{
-		s[i].displaystudentinfo();
-	}
+	Student s1;
+	s1.first_name="Kiran";
+	s1.last_name="shahpal";
+	s1.roll_number=13;
+	s1.marks=70;
+	s1.displaystudentinfo();
 	return 0;
 }
